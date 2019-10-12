@@ -1,0 +1,66 @@
+﻿* {
+    color: #ffffff;
+    background-color: #212121;
+}
+
+.header-container {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-areas: 'start middle middle middle middle middle end';
+    margin: 6px;
+}
+
+.header-container-start {
+    grid-area: start;
+    text-align: center;
+    line-height: 33px;
+}
+
+.header-container-middle {
+    grid-area: middle;
+}
+
+.header-container-end {
+    grid-area: end;
+}
+
+.body-container {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-rows: 320px 32px auto;
+    grid-template-areas: 'query' 'query' 'query' 'query' 'query' 'exec' 'result';
+    margin: 6px;
+}
+
+.body-container-query {
+    grid-area: query;
+}
+.body-container-exec {
+    grid-area: exec;
+}
+.body-container-result {
+    grid-area: result;
+}
+
+input {
+    padding: 10px;
+    border: solid #ffffff 1px;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+#imgLoader {
+    position: absolute;
+    left: 320px;
+    top: 210px;
+    width: 200px;
+}
+
+#tbResult {
+    border: solid #ffffff 1px;
+    border-radius: 6px;
+    padding: 10px;
+}

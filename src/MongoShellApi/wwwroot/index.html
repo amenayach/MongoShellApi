@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mongo Shell</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+    <!--<h1>Mongo Shell</h1>-->
+    <div class="header-container">
+        <span class="header-container-start">Connection</span>
+        <input class="header-container-middle" type="text" id="tbConnection" value="mongodb://localhost:27017/lookupdb" />
+        <input class="header-container-end" type="button" id="btnConnect" value="Try to connect" />
+    </div>
+    <div class="body-container">
+        <textarea class="body-container-query" id="tbQuery">{
+  "find": "gender",
+  "filter": {}
+}</textarea> <br />
+        <input class="body-container-exec" type="button" id="btnExec" value="Execute command" />
+        <pre class="body-container-result" id="tbResult">----</pre>
+    </div>
+    <img src="./infinity.svg" alt="Please wait" id="imgLoader" class="hidden" />
+    <script src="./http-service.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
