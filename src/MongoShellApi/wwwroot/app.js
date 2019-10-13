@@ -11,7 +11,7 @@
 
         var localStorageKey = 'data';
         var localStorageValue = {
-            connection: 'mongodb://localhost:27017/lookupdb',
+            connection: 'mongodb://host.docker.internal:27017/lookupdb',
             query: `{
   "find": "country",
   "filter": {}
