@@ -9,19 +9,18 @@
     <!--<h1>Mongo Shell</h1>-->
     <div class="header-container">
         <span class="header-container-start">Connection</span>
-        <input class="header-container-middle" type="text" id="tbConnection" value="mongodb://localhost:27017/lookupdb" />
+        <input class="header-container-middle" type="text" id="tbConnection" value="" />
         <input class="header-container-end" type="button" id="btnConnect" value="Try to connect" />
+        <input class="header-container-help" type="button" id="btnHelp" value="?" placeholder="Help" />
     </div>
     <div class="body-container">
-        <textarea class="body-container-query" id="tbQuery">{
-  "find": "gender",
-  "filter": {}
-}</textarea> <br />
-        <input class="body-container-exec" type="button" id="btnExec" value="Execute command" />
+        <textarea class="body-container-query" id="tbQuery"></textarea>
+        <input class="body-container-exec" type="button" id="btnExec" value="Execute command (Ctrl+Enter)" />
         <pre class="body-container-result" id="tbResult">----</pre>
     </div>
     <img src="./infinity.svg" alt="Please wait" id="imgLoader" class="hidden" />
     <script src="./http-service.js"></script>
+    <script src="./storage-service.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
